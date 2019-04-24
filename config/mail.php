@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Mail Driver
@@ -55,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'noreply@domain.tld', 'name' => 'OctoberCMS'],
+    'from' => ['address' => 'no-reply@blog.pinfort.me', 'name' => 'Pinfort blog'],
 
     /*
     |--------------------------------------------------------------------------
@@ -108,5 +107,4 @@ return [
     */
 
     'sendmail' => '/usr/sbin/sendmail -bs',
-
 ];
