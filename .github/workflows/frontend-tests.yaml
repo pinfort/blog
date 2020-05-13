@@ -20,7 +20,7 @@ jobs:
           node-version: 8
       - name: Install Node dependencies
         run: npm install
-        - name: Install PHP
+      - name: Install PHP
         uses: shivammathur/setup-php@master
         with:
           php-version: 7.4
