@@ -55,7 +55,7 @@ return [
     | Back-end login remember
     |--------------------------------------------------------------------------
     |
-    | Define live duration of backend sessions :
+    | Define live duration of backend sessions:
     |
     | true  - session never expire (cookie expiration in 5 years)
     |
@@ -249,7 +249,7 @@ return [
     |
     */
 
-    'databaseTemplates' => false,
+    'databaseTemplates' => env('DATABASE_TEMPLATES', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -324,7 +324,7 @@ return [
     |
     */
 
-    'convertLineEndings' => true,
+    'convertLineEndings' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -371,8 +371,8 @@ return [
     | Cross Site Request Forgery (CSRF) Protection
     |--------------------------------------------------------------------------
     |
-    | If the CSRF protection is enabled, all "postback" requests are checked
-    | for a valid security token.
+    | If the CSRF protection is enabled, all "postback" & AJAX requests are
+    | checked for a valid security token.
     |
     */
 
