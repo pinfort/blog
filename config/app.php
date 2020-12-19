@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
@@ -122,6 +123,7 @@ return [
     */
 
     'providers' => array_merge(include(base_path('modules/system/providers.php')), [
+
         // 'Illuminate\Html\HtmlServiceProvider', // Example
 
         'System\ServiceProvider',
@@ -146,7 +148,7 @@ return [
     */
 
     'loadDiscoveredPackages' => false,
-
+    
     /*
     |--------------------------------------------------------------------------
     | Class Aliases
@@ -159,6 +161,9 @@ return [
     */
 
     'aliases' => array_merge(include(base_path('modules/system/aliases.php')), [
+
         // 'Str' => 'Illuminate\Support\Str', // Example
+
     ]),
+
 ];

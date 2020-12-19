@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     /*
     |--------------------------------------------------------------------------
     | PDO Fetch Style
@@ -44,47 +45,49 @@ return [
     */
 
     'connections' => [
+
         'sqlite' => [
-            'driver' => 'sqlite',
+            'driver'   => 'sqlite',
             'database' => env('DB_DATABASE', 'storage/database.sqlite'),
-            'prefix' => '',
+            'prefix'   => '',
         ],
 
         'mysql' => [
-            'driver' => 'mysql',
-            'engine' => 'InnoDB',
+            'driver'     => 'mysql',
+            'engine'     => 'InnoDB',
             'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', 3306),
             'database' => env('DB_DATABASE', 'database'),
             'username' => env('DB_USERNAME', ''),
             'password' => env('DB_PASSWORD', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
+            'charset'    => 'utf8mb4',
+            'collation'  => 'utf8mb4_unicode_ci',
+            'prefix'     => '',
             'varcharmax' => 191,
         ],
 
         'pgsql' => [
-            'driver' => 'pgsql',
+            'driver'   => 'pgsql',
             'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', 5432),
             'database' => env('DB_DATABASE', 'database'),
             'username' => env('DB_USERNAME', ''),
             'password' => env('DB_PASSWORD', ''),
-            'charset' => 'utf8',
-            'prefix' => '',
-            'schema' => 'public',
+            'charset'  => 'utf8',
+            'prefix'   => '',
+            'schema'   => 'public',
         ],
 
         'sqlsrv' => [
-            'driver' => 'sqlsrv',
+            'driver'   => 'sqlsrv',
             'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', 5432),
             'database' => env('DB_DATABASE', 'database'),
             'username' => env('DB_USERNAME', ''),
             'password' => env('DB_PASSWORD', ''),
-            'prefix' => '',
+            'prefix'   => '',
         ],
+
     ],
 
     /*
@@ -112,6 +115,7 @@ return [
     */
 
     'redis' => [
+
         'client' => 'predis',
         'cluster' => false,
 
@@ -121,6 +125,7 @@ return [
             'port' => env('REDIS_PORT', 6379),
             'database' => 0,
         ],
+
     ],
 
     /*

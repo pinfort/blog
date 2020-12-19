@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     /*
     |--------------------------------------------------------------------------
     | Default Session Driver
@@ -146,7 +147,7 @@ return [
     | the HTTP protocol. You are free to modify this option if needed.
     |
     */
-
+    
     'http_only' => true,
 
     /*
@@ -194,4 +195,5 @@ return [
     */
 
     'same_site' => 'Lax',
+
 ];
