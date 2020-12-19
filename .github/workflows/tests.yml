@@ -10,8 +10,9 @@ on:
 
 jobs:
   frontendTests:
-    matrix:
-        phpVersion: ['7.4']
+    strategy:
+      matrix:
+          phpVersion: ['7.4']
     runs-on: ubuntu-latest
     name: JavaScript
     steps:
