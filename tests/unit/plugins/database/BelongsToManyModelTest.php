@@ -54,6 +54,9 @@ class BelongsToManyModelTest extends PluginTestCase
         // Extra nullify checks (still exists in DB until saved)
         $author->reloadRelations('roles');
         $this->assertEquals(2, $author->roles->count());
+
+        // Nullify
+        $author->roles = null;
         $author->save();
         $author->reloadRelations('roles');
         $this->assertEquals(0, $author->roles->count());
