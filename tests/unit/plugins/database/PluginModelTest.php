@@ -8,7 +8,7 @@ class PluginModelTest extends PluginTestCase
     {
         parent::setUp();
 
-        $this->markTestSkipped('skipped');
+        $this->markTestSkipped('skipped for some reason');
 
         include_once base_path().'/tests/fixtures/plugins/database/tester/models/Post.php';
 
