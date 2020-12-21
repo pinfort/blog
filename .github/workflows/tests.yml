@@ -27,6 +27,13 @@ jobs:
       - name: Install Node dependencies
         run: npm install
 
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.phpVersion }}
+          tools: composer:v1
+          extensions: ${{ env.extensions }}
+
       - name: Setup dependency cache
         id: composercache
         run: echo "::set-output name=dir::$(composer config cache-files-dir)"
