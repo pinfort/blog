@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.9.0",
+            "version": "v1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca"
+                "reference": "1a0357fccad9d1cc1ea0c9a05b8847fbccccb78d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
-                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
+                "url": "https://api.github.com/repos/composer/installers/zipball/1a0357fccad9d1cc1ea0c9a05b8847fbccccb78d",
+                "reference": "1a0357fccad9d1cc1ea0c9a05b8847fbccccb78d",
                 "shasum": ""
             },
             "require": {
@@ -28,17 +28,18 @@
                 "shama/baton": "*"
             },
             "require-dev": {
-                "composer/composer": "1.6.* || 2.0.*@dev",
-                "composer/semver": "1.0.* || 2.0.*@dev",
-                "phpunit/phpunit": "^4.8.36",
-                "sebastian/comparator": "^1.2.4",
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
                 "symfony/process": "^2.3"
             },
             "type": "composer-plugin",
             "extra": {
                 "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-main": "1.x-dev"
                 }
             },
             "autoload": {
@@ -76,6 +77,7 @@
                 "Porto",
                 "RadPHP",
                 "SMF",
+                "Starbug",
                 "Thelia",
                 "Whmcs",
                 "WolfCMS",
@@ -116,6 +118,7 @@
                 "phpbb",
                 "piwik",
                 "ppi",
+                "processwire",
                 "puppet",
                 "pxcms",
                 "reindex",
@@ -133,7 +136,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/installers/issues",
-                "source": "https://github.com/composer/installers/tree/v1.9.0"
+                "source": "https://github.com/composer/installers/tree/v1.10.0"
             },
             "funding": [
                 {
@@ -141,11 +144,15 @@
                     "type": "custom"
                 },
                 {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/composer/composer",
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-04-07T06:57:05+00:00"
+            "time": "2021-01-14T11:07:16+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1764,22 +1771,20 @@
         },
         {
             "name": "october/cms",
-            "version": "v1.1.1",
+            "version": "v1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/octoberrain/cms.git",
-                "reference": "0634060195cac6c558d46b1d3d906d77e24afd00"
+                "reference": "45901e70d5fd077e60568f3bb5739578e5cd8b66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/octoberrain/cms/zipball/0634060195cac6c558d46b1d3d906d77e24afd00",
-                "reference": "0634060195cac6c558d46b1d3d906d77e24afd00",
+                "url": "https://api.github.com/repos/octoberrain/cms/zipball/45901e70d5fd077e60568f3bb5739578e5cd8b66",
+                "reference": "45901e70d5fd077e60568f3bb5739578e5cd8b66",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0",
-                "laravel/framework": "~6.0",
-                "october/rain": "~1.1.0",
                 "php": ">=7.2"
             },
             "type": "october-module",
@@ -1807,12 +1812,6 @@
                     "name": "Samuel Georges",
                     "email": "daftspunky@gmail.com",
                     "role": "Co-founder"
-                },
-                {
-                    "name": "Luke Towers",
-                    "email": "octobercms@luketowers.ca",
-                    "homepage": "https://luketowers.ca",
-                    "role": "Maintainer"
                 }
             ],
             "description": "CMS module for October CMS",
@@ -1823,9 +1822,9 @@
                 "october cms"
             ],
             "support": {
-                "source": "https://github.com/octoberrain/cms/tree/v1.1.1"
+                "source": "https://github.com/octoberrain/cms/tree/v1.1.4"
             },
-            "time": "2020-11-11T01:53:31+00:00"
+            "time": "2021-03-19T03:40:12+00:00"
         },
         {
             "name": "october/rain",
